@@ -1,0 +1,86 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("img_bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #BFDB38;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.content {
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.content h1 {
+    font-size: 65px;
+    margin-top: 50px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 17px;
+    color: #BFDB38;
+}
+
+.img-content {
+    width: 17%;
+    heigth: 17%;
+    display: inline-flexbox;
+}
+
+.content h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
