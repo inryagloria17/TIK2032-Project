@@ -52,6 +52,11 @@ html {
     bottom: -5px;
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
 .content {
     top: 50%;
     width: 100%;
@@ -59,15 +64,16 @@ html {
     color: white;
     position: absolute;
     transform: translateY(-50%);
+    padding: 20px; 
 }
 
 .content h1 {
-    font-size: 65px;
-    margin-top: 50px;
+    font-size: 35px;
+    margin-top: 40px;
 }
 
 .content p {
-    margin: 20px auto;
+    margin: 10px auto;
     font-weight: 100;
     line-height: 25px;
     font-size: 17px;
@@ -83,4 +89,32 @@ html {
 .content h2 {
     font-size: 20px;
     margin-top: 20px;
+}  
+
+.profile-image {
+    width: 170px; 
+    height: 170px;
+    border-radius: 50%; 
+    margin-bottom: 5px; 
+  }
+
+
+/* for small screen */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        text-align: center;
+    }
+    .navbar ul.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
 }
